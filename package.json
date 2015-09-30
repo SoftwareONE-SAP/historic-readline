@@ -3,5 +3,8 @@
   "version": "1.0.2",
   "description": "Adds history to node's readline by saving it to a file",
   "license": "MIT",
-  "main": "./rl.js"
+  "main": "./rl.js",
+  "dependencies": {
+    "fs-extra": "^0.24.0"
+  }
 }

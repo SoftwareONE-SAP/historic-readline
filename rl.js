@@ -1,7 +1,9 @@
 var readline = require('readline');
-var fs = require('fs');
+var fs = require('fs-extra');
 
 function createInterface(options) {
+
+    fs.createFileSync(options['path']);
 
     var history = fs.readFileSync(options['path'], "utf8").toString().split("\n").slice(0, -1).splice(options['maxLength']).reverse();
 
