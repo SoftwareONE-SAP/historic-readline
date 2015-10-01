@@ -5,7 +5,7 @@ function createInterface(options) {
 
     fs.createFileSync(options['path']);
 
-    var history = fs.readFileSync(options['path'], "utf8").toString().split("\n").slice(0, -1).splice(options['maxLength']).reverse();
+    var history = fs.readFileSync(options['path'], "utf8").toString().split("\n").slice(0, -1).slice(0, options['maxLength']).reverse();
 
     /**
      * Set the history size based on our history length
