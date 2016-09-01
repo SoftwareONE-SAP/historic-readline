@@ -17,6 +17,13 @@ function createInterface(options) {
      */
     var rl = readline.createInterface(options);
 
+    /**
+     * Set prompt
+     */
+    if(options.prompt){
+        rl.setPrompt(options.prompt);
+    }
+
     var oldAddHistory = rl._addHistory;
 
     rl._addHistory = function() {
