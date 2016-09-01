@@ -1,6 +1,6 @@
 {
   "name": "historic-readline",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Adds history to node's readline by saving it to a file",
   "license": "MIT",
   "main": "./rl.js",
