@@ -1,9 +1,13 @@
 {
   "name": "historic-readline",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Adds history to node's readline by saving it to a file",
   "license": "MIT",
   "main": "./rl.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Centiq/historic-readline"
+  },
   "dependencies": {
     "fs-extra": "^0.24.0"
   }
