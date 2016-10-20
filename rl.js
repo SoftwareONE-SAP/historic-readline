@@ -39,7 +39,10 @@ function createInterface(options) {
         return line;
     }
 
-    rl.history.push.apply(rl.history, history);
+    if(rl.history instanceof Array){
+        rl.history.push.apply(rl.history, history);
+    }
+
 
     options['next'](rl);
 
